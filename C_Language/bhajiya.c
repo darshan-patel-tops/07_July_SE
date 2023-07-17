@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int bhajiya=1,mummy=1,besan=1,barish=1;
+	int bhajiya=1,mummy=1,besan=1,barish=0;
 	
 	
 	if(barish>0)
