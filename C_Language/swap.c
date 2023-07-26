@@ -11,7 +11,7 @@ main()
 
 	num1 = num1 + num2; //300
 	num2 = num1 - num2; //100
-	num1 = num1 - num2; //100
+	num1 = num1 - num2; //200
 	
 	printf("\nAfter exchange \n");
 	printf("\n num 1 is : %d",num1);
