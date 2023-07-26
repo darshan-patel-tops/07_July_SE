@@ -5,41 +5,48 @@ int main()
 	int n = 5, rows, columns;
 
 
-	for (rows = 1; rows <= n; rows++) {
+	for (rows = 1; rows <= n; rows++) 
+	{
 
-		for (columns = n; columns > rows; columns--) {
-			printf(" ");
+		for (columns = n; columns > rows; columns--) 
+		{
+		printf(" ");
 		}
 
 		printf("*");
 
-		for (columns = 1; columns < (rows - 1) * 2;
-			columns++) {
+		for (columns=1; columns<(rows - 1)*2;columns++) 
+			{
 			printf(" ");
-		}
-		if (rows == 1) {
+			}
+		if (rows == 1) 
+		{
 			printf("\n");
 		}
-		else {
+		else 
+		{
 			printf("*\n");
 		}
 	}
 
 	for (rows = n - 1; rows >= 1; rows--) {
 
-		for (columns = n; columns > rows; columns--) {
+		for (columns = n; columns > rows; columns--) 
+		{
 			printf(" ");
 		}
 
 		printf("*");
-		for (columns = 1; columns < (rows - 1) * 2;
-			columns++) {
+		for (columns = 1; columns<(rows - 1)*2;columns++) 
+		{
 			printf(" ");
 		}
-		if (rows == 1) {
+		if (rows == 1) 
+		{
 			printf("\n");
 		}
-		else {
+		else 
+		{
 			printf("*\n");
 		}
 	}
