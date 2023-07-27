@@ -12,8 +12,8 @@ int main()
 		{
 		printf(" ");
 		}
-
 		printf("*");
+
 
 		for (columns=1; columns<(rows - 1)*2;columns++) 
 			{
