@@ -11,7 +11,7 @@ datatype function name()
 */
 int plus()
 {
-		int num1,num2;
+	int num1,num2;
 	printf("Enter number 1 : \n");
 	scanf("%d",&num1);
 	printf("Enter number 2 : \n");
