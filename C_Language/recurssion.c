@@ -9,7 +9,7 @@ int number(int a)
 	{
 		
 	printf("%d \n",a); 
-	a--;
+	a++;
 	number(a);
 	}
 	else
@@ -21,5 +21,7 @@ int number(int a)
 
 main()
 {
-	number(5);
+	int num;
+	scanf("%d",&num);
+	number(num);
 }
