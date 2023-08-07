@@ -20,6 +20,9 @@ elaichi
 #include<iostream>
 using namespace std;
 
+
+
+//encapsulation means wrapping up the data in a single unit
 class mobile
 {
 	public :
