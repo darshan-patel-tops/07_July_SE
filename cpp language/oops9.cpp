@@ -35,13 +35,14 @@ class bank :public rbi
 
 main()
 {
-//	bank b;
-//	b.smscharge();
-//	b.interest();
-//	b.withdraw();
+	bank b;
+	b.smscharge();
+	b.interest();
+	b.withdraw();
 
-rbi r;
-r.interest();
+//rbi r;
+//r.interest();
+//r.withdraw();
 
 }
 

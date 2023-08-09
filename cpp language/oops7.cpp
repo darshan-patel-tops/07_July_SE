@@ -4,7 +4,7 @@ using namespace std;
 class dada {
 public:
     int zameen() {
-        cout << "Zameen" << endl;
+        cout << " dada ka Zameen" << endl;
     }
 };
 
@@ -24,6 +24,11 @@ public:
 
 class beta : public papa, public kaka {
 public:
+	void zameen()
+	{
+		papa::zameen();
+		cout<<"Bete ka zameen"<<endl;
+	}
     void bike() {
         cout << "Bike" << endl;
     }
@@ -34,5 +39,7 @@ int main() {
     b.bike();
     b.car();
     b.house();
+    b.zameen();
     b.papa::zameen();  // Specify which base class's zameen() to call
+    b.kaka::zameen();  // Specify which base class's zameen() to call
 }
