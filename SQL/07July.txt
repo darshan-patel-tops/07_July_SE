@@ -1,0 +1,68 @@
+SQL
+Structured Query Language
+
+NOSQL
+
+
+
+
+primary means unique plus auto increament
+
+CRUD
+Create
+Read 
+Update
+Delete
+
+CREATE DATABASE 07_July_se
+
+
+
+
+CREATE TABLE users
+(
+	user_id int PRIMARY KEY AUTO_INCREMENT,
+ 	name varchar(55),
+    email varchar(255) UNIQUE KEY,
+    password varchar(50)
+)
+
+
+
+INSERT into users VALUES(1,"bhavesh","email@mail.com","123123")
+
+
+INSERT into users(name,email,password) VALUES("dhruv","email1@mail.com","123123")
+
+
+
+SELECT * from users
+SELECT name from users
+SELECT name,email,password from users
+SELECT * from users WHERE user_id = 2
+SELECT * from users WHERE name = "bhavesh"
+SELECT * from users WHERE name = "bhavesh" or name = "dhruv"
+
+
+
+
+ALTER TABLE users
+add COLUMN mobile varchar(50)
+
+ALTER TABLE users
+DROP COLUMN mobile 
+
+
+DELETE FROM users
+DELETE FROM users WHERE user_id = 5
+DELETE FROM users WHERE name = "bhavesh"
+
+
+
+INSERT into users(name,email,password) VALUES("bhavesh","bhavesh@mail.com","123"),("dhruv","dhruv@mail.com","123")
+
+
+TRUNCATE TABLE users
+DROP TABLE users
+
+DROP DATABASE 07_july_se
