@@ -3,7 +3,14 @@ Structured Query Language
 
 NOSQL
 
-
+sql Aggrigate functions
+1. SUM
+2. MAX
+3. MIN
+4. COUNT
+5. FIRST
+6. LAST
+7. AVG
 
 
 primary means unique plus auto increament
@@ -66,3 +73,26 @@ TRUNCATE TABLE users
 DROP TABLE users
 
 DROP DATABASE 07_july_se
+
+UPDATE employee SET name="check" //savdhan rahe
+UPDATE employee  SET email="dhruv@mail.com",name="dhruv" WHERE id=2
+
+INSERT into employee(email,name) VALUES ("bhavesh@mail.com","bhavesh"),("admin@mail.com","admin"),("user@mail.com","user")
+
+
+
+SELECT * FROM employee LEFT JOIN users on employee.id = users.user_id
+SELECT * FROM employee RIGHT JOIN users on employee.id = users.user_id
+SELECT * FROM users LEFT JOIN employee on employee.id = users.user_id
+SELECT * FROM users INNER JOIN employee on employee.id = users.user_id
+SELECT * FROM users FULL OUTER JOIN employee on employee.id = users.user_id
+SELECT * FROM users FULL  JOIN employee on employee.id = users.user_id
+
+
+
+
+SELECT SUM(salary) as total_salary FROM employee
+SELECT MIN(salary) as minimum_salary FROM employee
+SELECT max(salary)  FROM employee
+SELECT COUNT(salary)  FROM employee
+SELECT AVG(salary)  FROM employee
