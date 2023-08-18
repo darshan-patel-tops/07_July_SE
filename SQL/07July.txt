@@ -139,3 +139,38 @@ COMMIT
 
 DELETE FROM country WHERE name = "pakistan";
 ROLLBACK
+
+
+
+
+  DELIMITER //
+CREATE PROCEDURE my_pro(IN number int(10))
+ BEGIN
+ SELECT * FROM employee WHERE country_id = number;
+ END //
+DELIMITER ;
+
+
+delimiter //
+create procedure tops_cursor()
+begin
+DECLARE whatever BOOLEAN DEFAULT FALSE;   
+declare cs1 cursor for select name from employee;
+end //
+
+
+
+SELECT * FROM employee WHERE username LIKE "%a"
+SELECT * FROM employee WHERE username LIKE "l%"
+SELECT * FROM employee WHERE username LIKE "a%"
+SELECT * FROM employee WHERE username LIKE "%a%"
+SELECT * FROM employee WHERE username LIKE "%a%"
+
+
+
+CREATE INDEX idx_pname
+ON employee (username, name);
+
+
+SELECT * FROM employee  ORDER BY  username
+SELECT * FROM employee  ORDER BY  username DESC
