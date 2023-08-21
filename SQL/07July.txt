@@ -174,3 +174,24 @@ ON employee (username, name);
 
 SELECT * FROM employee  ORDER BY  username
 SELECT * FROM employee  ORDER BY  username DESC
+
+
+
+
+SELECT * FROM employee1 WHERE id in
+(
+SELECT id from customer where salary < 500
+)
+
+
+
+SELECT * FROM country
+WHERE name IN ('Germany', 'France', 'UK');
+
+
+
+SELECT * 
+     FROM customer 
+     WHERE customer_id  IN (SELECT id
+     FROM country 
+     WHERE name = "UK") ;
